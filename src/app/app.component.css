@@ -1,0 +1,26 @@
+#progress-custom{
+    background-color: #03aa6c;
+}
+
+#progress-rec-custom{
+    border-radius: 0;
+}
+
+#text-custom{
+    color: #dc143c;  
+}
+
+hr.dotted-line{
+    background-color: #fff;
+	border-top: 2px dotted #ff2f2f;
+}
+
+#btn-custom{
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #939393;
+}   
+
+#ul-custom{
+    padding-left: 17px;
+}
