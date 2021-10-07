@@ -1,9 +1,18 @@
 <div class="container col-7">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group form-check">
+        <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+        <label for="acceptTerms" class="form-check-label">I have read the required notification to the customer and understand customer reports cannot be run before I provide this notification.</label>
+        <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">*required</div>
+    </div>
+    <br>
     <div class="container">
         <div class="row">
           <div class="col pl-0">
-            <button class="btn btn rounded-pill btn-block" id="btn-custom">Back</button></div>
+            <button class="btn btn rounded-pill btn-block" id="btn-custom" (click)="onprev()">Back</button></div>
           <div class="col pr-0">
             <button class="btn btn rounded-pill btn-block" id="btn-custom">Continue</button></div>
-        </div>
+        </div>    
+</div>
+</form>
 </div>
