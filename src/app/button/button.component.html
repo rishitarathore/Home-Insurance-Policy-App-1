@@ -1,8 +1,8 @@
 <div class="container col-7">
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group form-check">
-        <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
-        <label for="acceptTerms" class="form-check-label">I have read the required notification to the customer and understand customer reports cannot be run before I provide this notification.</label>
+        <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" id="checkbox-custom" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+        <label for="acceptTerms" class="form-check-label"> &nbsp; &nbsp; I have read the required notification to the customer and understand customer reports cannot be run before I provide this notification.</label>
         <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">*required</div>
     </div>
     <br>
