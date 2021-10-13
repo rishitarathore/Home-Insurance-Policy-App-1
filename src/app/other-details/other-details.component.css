@@ -7,8 +7,8 @@ hr.dotted-line{
 	border-top: 2px dotted #ff2f2f;
 }
 
-#ul-custom{
-    padding-left: 17px;
+#custom-select{
+    border-radius: 10px;
 }
 
 #btn-custom{

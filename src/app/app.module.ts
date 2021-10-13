@@ -12,6 +12,7 @@ import { ButtonComponent } from './button/button.component';
 import { PrevComponent } from './prev/prev.component';
 import { NextComponent } from './next/next.component';
 import { CustomerConsentComponent } from './customer-consent/customer-consent.component';
+import { OtherDetailsComponent } from './other-details/other-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CustomerConsentComponent } from './customer-consent/customer-consent.co
     ButtonComponent,
     PrevComponent,
     NextComponent,
-    CustomerConsentComponent
+    CustomerConsentComponent,
+    OtherDetailsComponent
   ],
   imports: [
     BrowserModule,

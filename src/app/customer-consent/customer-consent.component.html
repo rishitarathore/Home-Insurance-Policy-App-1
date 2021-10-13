@@ -1,4 +1,39 @@
 <app-progress-bar></app-progress-bar>
-<app-heading></app-heading>
-<app-content></app-content>
-<app-button></app-button>
+<div class="container col-7">
+    <h1>
+        <p class="text-center font-weight-normal mt-4" id="text-custom">Get Customer Consent</p>
+      </h1>
+      <hr class="dotted-line"/>
+
+      Please read the following:<br>
+  In order to determine your eligibility and/or rate, we'll use information from a customer reporting agency that may include:
+  <br>
+  <br>
+  <ul id="ul-custom">
+  <li>Credit information on a member in your household</li>
+  <li>Loss history information on all named applications</li>
+  </ul>
+  Would you like more information?<br>
+  <p class="text-justify font-weight-bold">  Contact our nearest branch or agency</p>
+  <br>
+
+  
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group form-check">
+        <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" id="checkbox-custom" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+        <label for="acceptTerms" class="form-check-label"> &nbsp; &nbsp; I have read the required notification to the customer and understand customer reports cannot be run before I provide this notification.</label>
+        <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">*required</div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col pl-0">
+            <button class="btn btn rounded-pill btn-block" id="btn-custom" (click)="onprev()">Back</button></div>
+          <div class="col pr-0">
+            <button class="btn btn rounded-pill btn-block" id="btn-custom">Continue</button></div>
+        </div>    
+</div>
+</form>
+</div>
